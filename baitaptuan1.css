@@ -25,7 +25,24 @@ table {
     border-collapse: collapse;
 
 }
-th, td{
+td{
     border: 1px solid rgb(251, 182, 78);
     border-collapse: collapse;
+    color: black;
+}
+
+.left{
+    height: 40px;
+    width: 40px;
+    align-content: center;
+}
+.center{
+    height: 40px;
+    width: 40px;
+    vertical-align: top;
+}
+.right{
+    height: 40px;
+    width: 40px;
+    float: right;
 }

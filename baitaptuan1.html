@@ -300,7 +300,7 @@
         <br>
             <input placeholder="Cao Tri">
         <br>
-        <button>Submit</button>
+        <input type="button" value="Submit">
         
     </form>
     </div>
@@ -328,13 +328,29 @@
         <h2>Contact Us</h2>
         <form action="" class="form1">
             <p>Use the following form to send a message to Example Cafe</p>
-            <p>Your email 
-                <input type="email" name="txtEmail" value="" size="20" maxlength="20" class="email">
-            </p>
-            <label for="email" class="mess1">Message</label>
-            <textarea name="" id="" cols="50" rows="10" class="mess"></textarea>
-            <p>How did you hear of us?</p>
-            <select><option>Google</option><option>Facebook</option></select>   
+            <table>
+                <tr>
+                    <td><label for="emailForm">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailForm" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="gg">How did you hear of us?</label></td>
+                    <td><select id="gg"><option>Google</option><option>Facebook</option></select> </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="chk">Newsletter</label></td>
+                    <td><input type="checkbox" name="chknews" id="chk">Ensure this box is checked if would like to receive email updates</td>
+                </tr>
+            </table>
+            <input type="button" value="Send message">
+              
         </form>
         <h3>Bai 15</h3>
         <h2>Contact Us</h2>
@@ -357,6 +373,94 @@
                 </tr>
             </table>
         </fieldset>
+        <fieldset>
+            <legend>How you found us:</legend>
+            <table>
+                <tr>
+                    <td><label for="gg">How did you hear of us?</label></td>
+                    <td><select id="gg"><option>Google</option><option>Facebook</option></select> </td>
+                </tr>
+                
+                <tr>
+                    <td><label for="chk">Newsletter</label></td>
+                    <td><input type="checkbox" name="chknews" id="chk">Ensure this box is checked if would like to receive email updates</td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="button" value="Send message">
+
+        <fieldset>
+            <legend><i>Contact Information</i></legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" name="txtFirstName" id="fname" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last Name</label></td>
+                    <td><input type="text" name="txtLastName" id="lname" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="text" name="email" id="email" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><i>Competition Question</i></legend>
+            <table>
+                <tr>
+                    <label for="chk">How tall is the Eiffel Tower in Paris, France?</label><br>
+                    <input type="radio" name="chknews" id="chk">584 ft<br>
+                    <input type="radio" name="chknews" id="chk">784 ft<br>
+                    <input type="radio" name="chknews" id="chk">984 ft<br>
+                    <input type="radio" name="chknews" id="chk">1184 ft<br>
+                </tr>
+            </table>
+        </fieldset>
+
+        <fieldset>
+            <legend><i>Tiebreaker Question</i></legend>
+            <table>
+                <tr>
+                    <label for="ques">In 25 words or less, say why you would like to win $10.000:</label><br>               
+                    <td><textarea name="txtQues" id="ques" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend><i>Enter competititon</i></legend>
+            <input type="button" value="Enter Competititon">
+        </fieldset>
+
+        <h3>Bai 16</h3>
+        <h2>Travel reservation form</h2>
+        <p><b>* denotes mandotory</b></p>
+        <form action="">
+            <label for="fullName">Full name*</label><br>
+            <input type="text" name="txtName" readonly="readonly" id="fullName" size="20" value="" placeholder="FirstName LastName"><br>
+            
+            <label for="emad">Email address*</label><br>
+            <input type="text" name="txtemad" readonly="readonly" id="emad" size="20" value="" placeholder="EMAIL_ADDRESS"><br>
+            
+            <label for="tour">Select Tour Package*</label><br>
+            <select id="tour"><option>VungTau1</option><option>PhanThiet004</option><option>VungTau747</option><option>NhaTrang255</option></select><br>
+            
+            <label for="date">Arrival date*</label><br>
+            <input type="text" name="txtDate" readonly="readonly" id="date" size="20" value="" placeholder="m/d/y"><br>
+            
+            <label for="number">Number of persons*</label><br>
+            <input type="text" name="txtemad" readonly="readonly" id="emad" size="20" value="" placeholder="UNKNOWN_TYPE"><br>
+
+            <label for="chk1">What would you want to avail?*</label><br>
+            Boarding<input type="radio" name="chknews" id="chk1"><br>
+            Fooding<input type="radio" name="chknews" id="chk1"><br>
+            Sight seeing<input type="radio" name="chknews" id="chk1"><br>
+
+        </form>
 </body>
 
 </html>

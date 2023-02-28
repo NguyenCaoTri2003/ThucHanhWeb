@@ -51,3 +51,16 @@ td{
     border: 1px solid rgb(255, 157, 10);
     border-collapse: collapse;
 }
+.form1 {
+    text-align: left;
+   
+}
+.email{
+    margin: 10px;
+}
+.mess{
+    margin: 30px;
+}
+.messp{
+    text-align: center;
+}

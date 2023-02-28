@@ -331,12 +331,32 @@
             <p>Your email 
                 <input type="email" name="txtEmail" value="" size="20" maxlength="20" class="email">
             </p>
-            <p class="messp">Message 
-                
-            </p>
+            <label for="email" class="mess1">Message</label>
             <textarea name="" id="" cols="50" rows="10" class="mess"></textarea>
+            <p>How did you hear of us?</p>
+            <select><option>Google</option><option>Facebook</option></select>   
         </form>
-        
+        <h3>Bai 15</h3>
+        <h2>Contact Us</h2>
+        <fieldset>
+            <legend>Your message:</legend>
+            <table>
+                <tr>
+                    <td><label for="emailTo">To</label></td>
+                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo" size="20" value="Example Cafe"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailForm">Your email</label></td>
+                    <td><input type="text" name="txtFrom" id="emailForm" size="20" tabindex="1" maxlength="250"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="emailBody">Message</label></td>
+                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
 </body>
 
 </html>
